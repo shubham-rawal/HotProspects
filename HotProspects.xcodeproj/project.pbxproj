@@ -14,6 +14,7 @@
 		51EA5B1228D1B999001768DF /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA5B1128D1B999001768DF /* ProspectsView.swift */; };
 		51EA5B1428D1B9A0001768DF /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA5B1328D1B9A0001768DF /* MeView.swift */; };
 		51EA5B1628D1BAB4001768DF /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA5B1528D1BAB4001768DF /* Prospect.swift */; };
+		51EA5B1928D1C29D001768DF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 51EA5B1828D1C29D001768DF /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51EA5B1928D1C29D001768DF /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				51EA5B1828D1C29D001768DF /* CodeScanner */,
+			);
 			productName = HotProspects;
 			productReference = 5104092928C75D9C0049511B /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 5104092028C75D9B0049511B;
+			packageReferences = (
+				51EA5B1728D1C29D001768DF /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 5104092A28C75D9C0049511B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51EA5B1728D1C29D001768DF /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51EA5B1828D1C29D001768DF /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51EA5B1728D1C29D001768DF /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5104092128C75D9B0049511B /* Project object */;
 }
