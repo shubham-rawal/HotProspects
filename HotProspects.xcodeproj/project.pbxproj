@@ -15,6 +15,7 @@
 		51EA5B1428D1B9A0001768DF /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA5B1328D1B9A0001768DF /* MeView.swift */; };
 		51EA5B1628D1BAB4001768DF /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA5B1528D1BAB4001768DF /* Prospect.swift */; };
 		51EA5B1928D1C29D001768DF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 51EA5B1828D1C29D001768DF /* CodeScanner */; };
+		51F93E2328D3402400F029B2 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F93E2228D3402400F029B2 /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +24,11 @@
 		5104092E28C75D9C0049511B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5104093028C75D9C0049511B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5104093328C75D9C0049511B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		518D431628D25DAA000FD60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		51EA5B1128D1B999001768DF /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		51EA5B1328D1B9A0001768DF /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		51EA5B1528D1BAB4001768DF /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		51F93E2228D3402400F029B2 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +62,10 @@
 		5104092B28C75D9C0049511B /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
+				518D431628D25DAA000FD60C /* Info.plist */,
 				5104092C28C75D9C0049511B /* HotProspectsApp.swift */,
 				5104092E28C75D9C0049511B /* ContentView.swift */,
+				51F93E2228D3402400F029B2 /* ImageSaver.swift */,
 				51EA5B1128D1B999001768DF /* ProspectsView.swift */,
 				51EA5B1528D1BAB4001768DF /* Prospect.swift */,
 				51EA5B1328D1B9A0001768DF /* MeView.swift */,
@@ -155,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EA5B1428D1B9A0001768DF /* MeView.swift in Sources */,
+				51F93E2328D3402400F029B2 /* ImageSaver.swift in Sources */,
 				51EA5B1628D1BAB4001768DF /* Prospect.swift in Sources */,
 				51EA5B1228D1B999001768DF /* ProspectsView.swift in Sources */,
 				5104092F28C75D9C0049511B /* ContentView.swift in Sources */,
@@ -289,6 +295,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotProspects/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR Code.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Saving QR Code to Photos requires access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +326,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HotProspects/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera permission is required to scan QR Code.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Saving QR Code to Photos requires access.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
